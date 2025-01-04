@@ -27,10 +27,6 @@ jobs:
         uses: taiki-e/install-action@v2
         with:
           tool: mdbook-pagetoc
-      - name: Install mdbook-force-relative-links
-        uses: taiki-e/install-action@v2
-        with:
-          tool: mdbook-force-relative-links
       - name: Build Book
         run: mdbook build
       - name: Setup Pages

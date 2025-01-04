@@ -1,5 +1,5 @@
 # Encoding of BLEZ/BGEZ/BLEZAL/BGEZAL
-Both [PSX-SPX](/references.md#PSX-SPX) and the [R3000 manual](/references.md#R3000-Manual) specify 
+Both [PSX-SPX](../references.md#PSX-SPX) and the [R3000 manual](../references.md#R3000-Manual) specify 
 these instructions as having the following encoding:
 ```
 000001 | rs   | 00000| <--immediate16bit--> | bltz
