@@ -1,0 +1,17 @@
+[book]
+authors = ["vxpm"]
+language = "en"
+multilingual = false
+src = "src"
+title = "PSX Notes"
+
+[preprocessor.alerts]
+
+[preprocessor.pagetoc]
+
+[prepocessor.force-relative-links]
+after = ["links"]
+
+[output.html]
+additional-css = ["theme/pagetoc.css"]
+additional-js = ["theme/pagetoc.js"]
