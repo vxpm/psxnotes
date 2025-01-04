@@ -17,4 +17,4 @@ This is only partially correct. The true encoding is the following:
 Where `xxxx` is any bit sequence other than `1000`.
 
 This behaviour is required for passing the `b_0xXX_y` tests in 
-[Amidog's CPU test](/references.md#psxtest_cpu).
+[Amidog's CPU test](../references.md#psxtest_cpu).
