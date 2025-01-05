@@ -1,4 +1,4 @@
-# Encoding of BLEZ/BGEZ/BLEZAL/BGEZAL
+# Encoding of BLTZ/BGEZ/BLTZAL/BGEZAL
 Both [PSX-SPX](../references.md#PSX-SPX) and the [R3000 manual](../references.md#R3000-Manual) specify 
 these instructions as having the following encoding:
 ```

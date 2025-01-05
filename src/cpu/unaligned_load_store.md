@@ -126,7 +126,7 @@ memory:        [0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, ..]
 rt:            0x4433_2211
 ```
 
-## SWL and SWL
+## SWL and SWR
 These two instructions work the exact same as their load counterparts, except that instead of 
 loading the bytes from memory and putting them into the bytes of `rt`, they store the bytes of `rt`
 in memory.
