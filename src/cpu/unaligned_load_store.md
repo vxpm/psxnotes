@@ -1,10 +1,10 @@
-# Unaligned word loads and stores
+# Unaligned loads and stores
 These instructions are surprisingly confusing, but become easier to grasp once you understand their 
 use case, which is performing unaligned reads/writes from/to memory.
 
 ## LWL
 ### Description
-LWL's goals is reading the "left" (i.e. higher order) part of an unaligned word in memory into the 
+`LWL`'s goal is reading the "left" (i.e. higher order) part of an unaligned word in memory into the 
 "left" part of a register.
 
 After computing the address `addr` to operate on, LWL performs the following:
@@ -54,7 +54,7 @@ rt:            0x44AD_BEEF
 
 ## LWR
 ### Description
-LWR's goals is reading the "right" (i.e. lower order) part of an unaligned word in memory into the 
+`LWR`'s goal is reading the "right" (i.e. lower order) part of an unaligned word in memory into the 
 "right" part of a register.
 
 After computing the address `addr` to operate on, LWR performs the following:
@@ -125,6 +125,15 @@ memory:        [0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, ..]
 
 rt:            0x4433_2211
 ```
+
+> [!NOTE]
+> Both `LWL` and `LWR` are special cased in the hardware to be able to bypas the load delay slot.
+> This means that performing _any_ load to a register and then immediately using either `LWL` or
+> `LWR` to load into the same register will have the second load use the value loaded by the first
+> one, even with it being in the delay slot. 
+>
+> At the same time, however, a [load cancel](load_cancelling.md) will happen, so the instruction
+> right after the second load will not see the value loaded by the first instruction.
 
 ## SWL and SWR
 These two instructions work the exact same as their load counterparts, except that instead of 
