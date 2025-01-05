@@ -13,7 +13,7 @@ After computing the address `addr` to operate on, LWL performs the following:
   the R3000 is little endian, this is also highest order to lowest)
 - In each iteration, set the byte of `rt` to the byte in memory
 - Stop once the byte address crosses a word boundary (in practice, this means you'll iterate exactly
-  `addr % 4 + 1` times)
+  `addr % 4` times)
 
 ### Examples
 ```
