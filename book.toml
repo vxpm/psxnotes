@@ -12,3 +12,5 @@ title = "PSX Notes"
 [output.html]
 additional-css = ["theme/pagetoc.css"]
 additional-js = ["theme/pagetoc.js"]
+smart-punctuation = true
+git-repository-url = "https://github.com/vxpm/psxnotes"

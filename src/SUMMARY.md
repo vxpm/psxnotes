@@ -6,5 +6,9 @@
   - [Unaligned loads and stores (LWL/SWL and LWR/SWR)](cpu/unaligned_load_store.md)
   - [Load Cancelling](cpu/load_cancelling.md)
   - [Manual Errata](cpu/manual_errata.md)
+- [GPU](gpu.md)
+  - [Commands](gpu/commands.md)
+    - [GP0 - Rendering Commands](gpu/rendering_commands.md)
+    - [GP1 - Display Commands](gpu/display_commands.md)
 
 [References](references.md)
